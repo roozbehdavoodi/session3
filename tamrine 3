@@ -1,0 +1,21 @@
+package com.company;
+
+
+public class Myinteger extends Number {
+    public void isEven(){
+            System.out.println("even number");
+        }
+    public void isOdd(){
+        System.out.println("odd number");
+    }
+    public void isPositive(){
+        System.out.println("positive number");
+    }
+    public void isNegative(){
+        System.out.println("negative number");
+    }
+    public void isZero(){
+        System.out.println("zero number");
+    }
+        
+}
