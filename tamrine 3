@@ -1,21 +1,55 @@
-package com.company;
+package adad;
+public class Main implements MyInteger {
+
+    @Override
+    public boolean isPosetive(int number) {
+        return number >= 0;
+    }
+
+    @Override
+    public boolean isEven(int number) {
+        return number % 2 == 0;
+    }
+
+    @Override
+    public boolean isNegative(int number) {
+        return number < 0;
+    }
+
+    @Override
+    public boolean isOdd(int number) {
+        return number % 2 != 0;
+    }
+
+    @Override
+    public boolean isZero(int number) {
+        return number == 0;
+    }
+
+***************************************************************************************************************************************************************************************
 
 
-public class Myinteger extends Number {
-    public void isEven(){
-            System.out.println("even number");
-        }
-    public void isOdd(){
-        System.out.println("odd number");
-    }
-    public void isPositive(){
-        System.out.println("positive number");
-    }
-    public void isNegative(){
-        System.out.println("negative number");
-    }
-    public void isZero(){
-        System.out.println("zero number");
-    }
-        
+
+}
+package adad;
+
+public interface MyInteger {
+
+    public boolean isEven(int number);
+    public boolean isOdd(int number);
+    public boolean isPosetive(int number);
+    public boolean isNegative(int number);
+    public boolean isZero(int number);
+}
+
+****************************************************************************************************************************************************************************************
+package adad;
+
+public interface MyInteger {
+
+    public boolean isEven(int number);
+    public boolean isOdd(int number);
+    public boolean isPosetive(int number);
+    public boolean isNegative(int number);
+    public boolean isZero(int number);
 }
