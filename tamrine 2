@@ -1,0 +1,43 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Scanner scanner=new Scanner (System.in);
+        System.out.println("nam e dars ra az beyne difransiel,gosaste va barname sazi pishrafte entekhab va sepas type konid");
+        String [][] mycourses = {};
+        mycourses[0][0]= "difransiel";
+        mycourses[0][1]= "3;";
+        mycourses[0][2]= "pishniaz";
+        mycourses[0][3]= "hamniaz";
+        mycourses[1][0]= "gosaste";
+        mycourses[1][1]= "3;";
+        mycourses[1][2]= "pishniaz";
+        mycourses[1][3]= "hamniaz";
+        mycourses[2][0]= "barname sazi pishrafte";
+        mycourses[1][1]= "3;";
+        mycourses[2][2]= "pishniaz";
+        mycourses[3][3]= "hamniaz";
+        String name = input.next();
+        for (int a = 1; a<=3;a++){
+            if (mycourses[a][0] == name)
+            {
+                System.out.println(mycourses[a][0]);
+                System.out.println(mycourses[a][1]);
+                System.out.println(mycourses[a][2]);
+                System.out.println(mycourses[a][3]);
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+}
